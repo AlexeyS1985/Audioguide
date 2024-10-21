@@ -1,0 +1,9 @@
+run = "dart run"
+entrypoint = "main.dart"
+
+[nix]
+channel = "stable-22_11"
+
+[deployment]
+run = ["sh", "-c", "dart run"]
+deploymentTarget = "cloudrun"
